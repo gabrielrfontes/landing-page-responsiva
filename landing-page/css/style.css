@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('header.css');
+@import url('home.css');
+@import url('menu.css');
+@import url('depoimentos.css');
+@import url('footer.css');
+
+:root {  /*Criação de variável em css, é padrão as variáveis começarem com "--". Para substituir os nomes dos objetos pela variável, selecione  o item que deseja substituir, aperte "ctrl + shift + H" e bota no campo: var(nome da variável com os -- e aperta em "replace all", preste atenção para tirar a opção de substituir o nome do item dentro do nome da própria variável), ele vai substituir em todos os arquivos do projeto que tiver o item selecionado.*/
+    --cor-primaria-1: #fffcf5;
+    --cor-primaria-2: #ffe8b4;
+    --cor-primaria-3: #ffe100;
+    --cor-primaria-4: #e9a209;
+
+    --cor-neutra-0: #fff;
+    --cor-neutra-1: #1d1d1d;
+}
+
+* {
+    font-family: "Poppins", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--cor-primaria-1);
+}
+
+section {
+    padding: 28px 8%;
+}
+
+.btn-default {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffcb45;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    padding: 10px 14px;
+    font-weight: 10px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color .3s ease;
+    -webkit-transition: background-color .3s ease;
+    -moz-transition: background-color .3s ease;
+    -ms-transition: background-color .3s ease;
+    -o-transition: background-color .3s ease;
+}
+
+.btn-default:hover {
+    background-color: #f8d477;
+}
+
+.social-media-btns {
+    display: flex;
+    gap: 18px;
+}
+
+.social-media-btns a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 40px;
+    background-color: #ffff;
+    font-size: 1.25rem;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    text-decoration: none;
+    color: #1d1d11;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow .3s ease;
+    -webkit-transition: box-shadow .3s ease;
+    -moz-transition: box-shadow .3s ease;
+    -ms-transition: box-shadow .3s ease;
+    -o-transition: box-shadow .3s ease;
+}
+
+.social-media-btns a:hover {
+    box-shadow: 0px 0px 12px 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-titulo {
+    color: #e9a209;
+    font-size: 1.563rem;
+}
+
+.section-subtitulo {
+    font-size: 2.1875rem;
+}
+
+@media screen and (max-width: 310px) {
+    #content {
+        display: none;
+    }
+
+    footer {
+        display: none;
+    }
+
+    #btn-pedido {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        
+    }
+}
